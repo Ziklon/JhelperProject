@@ -1,0 +1,11 @@
+
+#include <bits/stdc++.h>
+#include "../libs/io/output.h"
+#include "../libs/io/input.h"
+
+class %ClassName% {
+public:
+	void solve() {
+
+	}
+};

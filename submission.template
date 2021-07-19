@@ -1,0 +1,10 @@
+%Code%
+
+int main() {
+    std::ios::sync_with_stdio(false);
+    std::cin.tie(0);
+	%ClassName% solver;
+	%SolverCall%
+	fflush(stdout);
+	return 0;
+}
