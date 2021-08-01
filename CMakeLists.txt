@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 2.8.4)
 project(JhelperProject)
 
 add_executable(output output/main.cpp output/main.cpp libs/collections/SegmentTree.h libs/collections/FendwickTree.h libs/collections/Counter.h
-        libs/bits.h libs/io/Output.h libs/io/Input.h libs/graph/edges/BiEdge.h libs/graph/edges/BaseEdge.h)
+        libs/bits.h libs/io/Output.h libs/io/Input.h libs/graph/edges/BiEdge.h libs/graph/edges/BaseEdge.h libs/numbers/numbers.h)
 add_executable(testrunner testrunner/main.cpp testrunner/main.cpp)
 
 

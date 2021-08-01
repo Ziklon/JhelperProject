@@ -3,3 +3,5 @@ output/
 build/
 .DS_Store
 cmake-build-debug/
+
+.idea/runConfigurations/
