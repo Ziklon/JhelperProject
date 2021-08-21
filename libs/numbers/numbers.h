@@ -1,6 +1,6 @@
 #pragma once
 
-#include "commons.h"
+#include "../commons.h"
 
 template<typename T>
 T gcd(T a, T b) {

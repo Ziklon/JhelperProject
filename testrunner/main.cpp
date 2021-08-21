@@ -1,4 +1,4 @@
-#include "../tasks/ESafetyJourney.cpp"
+#include "../tasks/IdentifySmithNumbers.cpp"
 
 #include <iostream>
 #include <fstream>
@@ -35,7 +35,7 @@ int main() {
     string yellow = "\x1B[33m";
     string def = "\033[0m";
     std::vector<jhelper::Test> tests = {
-		{"3 1 4\n2 3\n", "4\n", true, true},{"3 3 3\n1 2\n1 3\n2 3\n", "0\n", true, true},{"5 3 100\n1 2\n4 5\n2 3\n", "428417047\n", true, true},
+		{"4937775", "1", true, true},
 	};
 	bool allOK = true;
 	int testID = 0;
@@ -67,7 +67,7 @@ int main() {
                 in = Input(cin);
                 //std::stringstream in(test.input);
                 out.setOut(fout);
-                ESafetyJourney solver;
+                IdentifySmithNumbers solver;
                 solver.solve();
                 out.flush();
                 fout.close();

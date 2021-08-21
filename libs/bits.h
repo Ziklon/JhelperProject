@@ -1,9 +1,6 @@
 #pragma once
 #include "commons.h"
 
-inline int bitCount(unsigned x) {
-  return __builtin_popcount(x);
-}
 
 inline int bitCount(ull x) {
   return __builtin_popcount(x);

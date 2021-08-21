@@ -1,5 +1,7 @@
 #pragma once
+
 #include "../commons.h"
+
 template<typename num_t, num_t defaultValue = 0>
 class SegmentTree {
     const int size;
@@ -8,18 +10,25 @@ class SegmentTree {
 
 public:
     SegmentTree(vector<num_t> &arr, const function<num_t(num_t, num_t)> &joinValue) :
-        size(arr.size()), joinValue(joinValue) {
+        size(sz(arr)), joinValue(joinValue) {
+#ifdef LOCAL
+      assert(size);
+#endif
       this->tree = vector<num_t>(size * 4);
       build(0, 0, size - 1, arr);
     }
 
     num_t query(int start, int end) {
+#ifdef LOCAL
       assert(start <= end && start >= 0 && end < size);
+#endif
       return query(0, 0, size - 1, start, end);
     }
 
     void update(int at, num_t val) {
+#ifdef LOCAL
       assert(at >= 0 && at < size);
+#endif
       update(0, 0, size - 1, at, val);
     }
 
