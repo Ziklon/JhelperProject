@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/jhelper-example-project.iml" filepath="$PROJECT_DIR$/.idea/jhelper-example-project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/JhelperProject.iml" filepath="$PROJECT_DIR$/.idea/JhelperProject.iml" />
     </modules>
   </component>
 </project>
